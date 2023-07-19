@@ -10,3 +10,24 @@ h2 {
 section {
     background-color: #fefefe;
 }
+
+.czerwony {
+    color: red;
+}
+
+#szkolenie {
+    background: yellow;
+}
+
+a {
+    color: green;
+}
+
+section a {
+    color: orange;
+}
+
+.my-article p {
+    background: #53585e;
+    color: white;
+}
