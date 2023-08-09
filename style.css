@@ -1,33 +1,57 @@
+html {
+	box-sizing: border-box;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
 h1 {
-    color: darkgreen;
+	color: darkgreen;
+	padding: 16px;
 }
 
 h2 {
-    color: #1460aa;
-    background-color: #e1c9c9;
+	color: #1460aa;
+	background-color: #e1c9c9;
+	padding: 16px;
 }
 
 section {
-    background-color: #fefefe;
+	background-color: #fefefe;
 }
 
 .czerwony {
-    color: red;
+	color: red;
 }
 
 #szkolenie {
-    background: yellow;
+	background: yellow;
+	padding: 16px;
 }
 
 a {
-    color: green;
+	color: green;
 }
 
 section a {
-    color: orange;
+	color: orange;
+}
+
+section {
+	padding: 16px;
+}
+
+footer {
+	padding: 16px;
 }
 
 .my-article p {
-    background: #53585e;
-    color: white;
+	background: #53585e;
+	color: white;
+	padding: 16px;
+}
+
+header {
+	padding: 16px;
 }

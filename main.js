@@ -5,4 +5,4 @@ const age=35;
 console.log(firstName);
 console.log(age);
 
-console.log(`Nazywam sie ${firstName} i mam ${age} lat`);
+console.log(`Cześć! Mam na imię ${firstName} i mam ${age} lat`);
