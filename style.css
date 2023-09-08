@@ -7,7 +7,8 @@ html {
 }
 
 body {
-	background-color: beige;
+	background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #755415 100%);;
+	font-family: Arial, Helvetica, sans-serif;
 }
 
 
@@ -43,7 +44,7 @@ section a {
 }
 
 .footer__content {
-	color: #1460aa; 
+	color: #93c0ec; 
 }
 
 .footer__top--link {
@@ -62,12 +63,16 @@ section a {
 	top: 0;
 }
 
-.my-article {margin-bottom: 32px;
-
+.my-article {
+	/*margin-bottom: 32px;*/
 }
 
 .my-article__header {
 	color: #316eac;
+}
+
+.my-article__list {
+	list-style-type: circle;
 }
 
 /*  */
@@ -75,14 +80,42 @@ section a {
 	background: #53585e;
 	color: white;
 	padding: 16px;
+	margin-bottom: 0;
 /*	max-width: 500px;*/
 /*border-radius: 10%;*/
 /*margin: 20px auto;*/
 }
 
+.header {
+	min-height: 50px;
+	background: #1460aa;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.hamburger {
+	padding: 4px;
+	background: none;
+	border: 0;
+	font-size: 1.5rem;
+}
+
 .navigation {
 	padding: 16px;
 	background-color: rgb(85, 85, 241);
+	display: none;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 24px;	
+	position: absolute;
+	top: 50px;
+	width: 100%;
+}
+
+.navigation--open {
+	display: flex;
 }
 
 .navigation__link {
@@ -91,6 +124,23 @@ section a {
 
 .page-header {
 	padding: 16px;
+}
+
+.page-header__button {
+	background: blue;
+	color: white;
+	font-weight: 700;
+	border: 0;
+	display: inline-block;
+	padding: 4px 8px;
+	border-radius: 4px;
+}
+
+.page-header__heading{
+	font-size: 1.5rem;
+	color: #fefefe;
+	font-weight: 600;
+	letter-spacing: 5px;
 }
 
 .section {
@@ -112,4 +162,65 @@ section a {
 	max-width: 100%;
 	display: block;
 
+}
+
+.section p {
+	line-height: 1.5;
+	background: #9ec0e2;
+}
+
+.special {
+	color: rgb(33, 22, 190);
+	font-weight: 300;
+}
+table {
+	width: 100%;
+	text-align: center;
+}
+
+table caption {
+	margin-bottom: 2rem;
+}
+
+.article-grid {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 12px;
+}
+
+@media screen and (min-width: 768px) {
+	body {
+		background: black;	}
+	.article-grid {
+	grid-template-columns: 1fr 1fr;
+	gap: 24px;}
+
+	.hamburger {
+		display: none;
+	}
+
+	.page-header__heading{		font-size: 2rem;	}
+
+	.navigation {
+		padding: 16px;
+		background-color: rgb(85, 85, 241);
+		display: flex;
+		flex-direction: row;
+		justify-content: center;		
+		align-items: center;
+		position: static;
+		gap: 24px;
+	}
+
+		.navigation__link {
+		color: white;
+	}
+	}
+@media screen and (min-width: 1280px) {
+	.page-header__heading{
+		font-size: 3rem;
+	}
+	.article-grid {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
 }

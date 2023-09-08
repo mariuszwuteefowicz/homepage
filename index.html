@@ -2,67 +2,124 @@
 <html lang="pl">
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>WTF: Co ten frontend</title>
-	<link href="/normalize.css" type="text/css" rel="stylesheet">
-	<link href="/style.css" type="text/css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WTF: Co ten frontend</title>
+    <link href="/normalize.css" type="text/css" rel="stylesheet">
+    <link href="/style.css" type="text/css" rel="stylesheet">
 </head>
 
 <body>
-	<header class="header">
-		<nav class="navigation">
-			<a class="navigation__link" href="index.html">Strona główna</a>
-			<a class="navigation__link" href="nauka-html.html">Nauka HTML</a>
-		</nav>
-	</header>
+    <header class="header">
+        <button class="hamburger hamburger--js"aria-label="Menu">menu</button>
+        <nav class="navigation navigation--js">
+            <a class="navigation__link" href="index.html">Strona główna</a>
+            <a class="navigation__link" href="nauka-html.html">Nauka HTML</a>
+            <a class="navigation__link" href="#">Instagram</a>
+            <a class="navigation__link" href="#">Facebook</a>
+            <a class="navigation__link" href="#">LinkedIn</a>
+        </nav>        
+    </header>
 
-	<main>
-		<header class="page-header" id="top">
-			<h1 class="page-header__heading page-header__heading--js">Mariusz - Strona domowa</h1>
-		</header>
-		<section class="section">
-			<h2 class="section__header">Kim jestem?</h2>
-			<img class="section__image" src="/wyspa.png" alt="ulubiony krajobraz">
-			<p class="czerwony">
-				Hej! Mam na imie Mariusz i od czerwca 2023 uczę się frontendu. <br>Na tej stronie bedę opisywał swoje
-				postępy.
-			</p>
-			<p>
-				Zobacz <a href="#szkolenie">czy uczę się sam.</a>
-			</p>
-		</section>
+    <main>
+        <header class="page-header" id="top">
+            <h1 class="page-header__heading page-header__heading--js">Mariusz - Strona domowa</h1>
+            <button class="page-header__button page-header__button--js">Zmień tekst nagłówka</button>
+        </header>
+        <section class="section">
+            <h2 class="section__header">Kim jestem?</h2>
+            <img class="section__image" src="/wyspa.png" alt="ulubiony krajobraz">
+            <p class="czerwony">
+                Hej! Mam na imie <span class="special">Mariusz</span> i od czerwca 2023 uczę się frontendu. <br>Na tej stronie bedę opisywał swoje
+                postępy.
+            </p>
+            <p>
+                Zobacz <a href="#szkolenie">czy uczę się sam.</a>
+            </p>
+        </section>
 
-		<section class="section">
-			<h2 class="section__header section__header--specjal">Notatki z WTF: Co ten frontend.</h2>
-			<article class="my-article">
-				<h3 class="my-article__header">Jak stworzyc prawidłowego HTML-a?</h3>
-				<p>Tworzenie zgodnego ze standardami HTML-a to <strong>sztuka.</strong> Dodatkowo wymaga sporo
-					<strong>wysiłku</strong> oraz poświęcenia dużej ilości <strong>czasu.</strong> <br>Sztukę tą
-					postaram się
-					ją opanować
-					<em>jak najlepiej.</em>
-				</p>
-			</article>
-			<article class="my-article">
-				<h3 class="my-article__header">JavaScript</h3>
-				<p class="my-article__content--js" >Najpierw ucze sie teorii. Polega to na przerabianiu lekcji online i robieniu notatek. Następnie robię
-					zadania domowe czyli buduję tą stronę.<br>Efekty będą widoczne w miarę upływu czasu.</p>
-			</article>
-			<article class="my-article" id="szkolenie">
-				<h3 class="my-article__header">Czy uczę się sam?</h3>
-				<p>Nie! Moim nauczycielem jest Maciek Korsan. A to program szkolenia <a href="https://cotenfrontend.pl"
-						target="_blank">WTF</a></p>
-			</article>
-		</section>
+        <section class="section">
+            <h2 class="section__header section__header--specjal">Notatki z WTF: Co ten frontend.</h2>
+            <article class="my-article">
+                <h3 class="my-article__header">Jak stworzyc prawidłowego HTML-a?</h3>
+                <p>Tworzenie zgodnego ze standardami <span class="special">HTML-a</span> to <strong>sztuka.</strong> Dodatkowo wymaga sporo
+                    <strong>wysiłku</strong> oraz poświęcenia dużej ilości <strong>czasu.</strong> <br>Sztukę tą
+                    postaram się
+                    ją opanować
+                    <em>jak najlepiej.</em>
+                </p>
+            </article>
+            <article class="my-article">
+                <h3 class="my-article__header">JavaScript</h3>
+                <p class="my-article__content--js">Najpierw ucze sie teorii. Polega to na przerabianiu lekcji online i
+                    robieniu notatek. Następnie robię
+                    zadania domowe czyli buduję tą stronę.<br>Efekty będą widoczne w miarę upływu czasu.</p>
+            </article>
+            <article class="my-article" id="szkolenie">
+                <h3 class="my-article__header">Czy uczę się sam?</h3>
+                <p>Nie! Moim nauczycielem jest Maciek Korsan. A to program szkolenia <a href="https://cotenfrontend.pl"
+                        target="_blank">WTF</a></p>
+            </article>
+            <article class="my-article">
+                <h3 class="my-article__header">Moje ulubione znaczniki</h3>
+                <ul class="my-article__list">
+                    <li>h1</li>
+                    <li>ul</li>
+                    <li>a</li>
+                </ul>
+                <dl>
+                    <dt>&lt;h1&gt;</dt>
+                    <dd>najważniejszy naglowek na stronie, kosztuje 1000&euro;</dd>
+                </dl>
+            </article>
+            <article class="my-article">
+                <h3 class="my-article__header">Kroki do stworzenia pliku HTML</h3>
+                <ol>
+                    <li>otworz edytor</li>
+                    <li>! [tab]</li>
+                    <li>zapisz plik</li> 
+                </ol>
+            </article>
+            <article class="my-article">
+                <h3 class="my-article__header">Lekcje WTF</h3>
+             <table>
+                <caption>rozpiska wtf</caption>
+                <thead>
+                    <tr>
+                        <th>numer lekcji</th>
+                        <th>tytul</th>
+                        <th>status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>hello world</td>
+                        <td>OK</td>                        
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>narzedzia</td>
+                        <td>OK</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>prace domowe</td>
+                        <td>NOK</td>
+                    </tr>
+                </tbody>
+             </table>
+            </article>
+        </section>
 
-	</main>
-	<footer class="footer">
-		<p class="footer__content">Strona domowa Mariusza, efekt szkolenia WTF.
-			<a class="footer__top--link" href="#top">Do góry </a>
-		</p>
-	</footer>
-	<script defer src="main.js"></script>
+    </main>
+    <footer class="footer">
+        <p class="footer__content">Strona domowa Mariusza, efekt szkolenia WTF.
+            <a class="footer__top--link" href="#top">Do góry </a>
+        </p>
+    </footer>
+    <script defer src="main.js"></script>
+    <script defer src="hamburger.js"></script>
 </body>
 
 </html>
