@@ -1,0 +1,24 @@
+.section {
+    background-color: rgb(189, 188, 188);
+    margin-bottom: 16px;
+    color: #1460aa;
+    padding: 16px;
+
+    &__header {
+        color: rgb(93, 96, 175);
+
+        &--specjal {
+            color: tomato;
+        }
+    }
+
+    &__image {
+        max-width: 100%;
+        display: block;
+
+    }
+    p {
+        line-height: 1.5;
+        background: #9ec0e2;
+    }    
+}
