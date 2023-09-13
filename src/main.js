@@ -1,13 +1,6 @@
-import tax, { calculate as superCalculate } from "./calculate";
-console.log(tax);
-
-import differenceInDays from 'date-fns/differenceInDays'
-
 // alert('wtf!');
 const firstName='Mariusz';
 const age=35;
-
-const calculate = () => 'hej hej obliczam';
 
 console.log(firstName);
 console.log(age);
@@ -28,12 +21,12 @@ const header = document.querySelector('.page-header__heading--js')
 
 //contentJs.innerHTML='Jestem wypelniony Javascriptem'
 
-//function calculate(myNumber) {
-//    myNumber=myNumber+3;
- //   console.log(myNumber);
-  //  return myNumber*7;}
+function calculate(myNumber) {
+    myNumber=myNumber+3;
+    console.log(myNumber);
+    return myNumber*7;}
 
-   
+         //const calculate = myNumber => (myNumber+3)*7
 
 calculate(1)
 
@@ -88,18 +81,3 @@ console.log(button.classList.contains('testowa'))
 
 console.log(button.classList)
 */
-
-try {
-
-const resultDays = differenceInDays(
-    new Date(2022, 1, 24, 0, 0),
-    new Date()
-  )
-  
-  console.log(resultDays)
-} catch (e) {
-    console.log(e);
-    alert('cos poszlo nie tak');
-}
-
-
