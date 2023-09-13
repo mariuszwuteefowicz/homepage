@@ -16,11 +16,11 @@ html {
 }
 
 body {
-    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #755415 100%);
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #836123 100%);
     font-family: Arial, Helvetica, sans-serif;
     min-height: 100vh;
     @media screen and (min-width: $tablet) {        
-        background: white;        
+        background: rgb(224, 224, 224);        
     }
 }
 
@@ -164,7 +164,7 @@ section a {
 
     &__heading {
         font-size: 1.5rem;
-        color: #fefefe;
+        color: #2e2d2d;
         font-weight: 600;
         letter-spacing: 5px;
         @media screen and (min-width: $tablet) {
