@@ -1,6 +1,9 @@
 import tax, { calculate as superCalculate } from "./calculate";
 console.log(tax);
 
+import { substractNumbers } from "./calculate";
+console.log(substractNumbers);
+
 import differenceInDays from 'date-fns/differenceInDays'
 
 // alert('wtf!');
