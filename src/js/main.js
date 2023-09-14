@@ -71,8 +71,9 @@ console.log(humanTwo)
 const button = document.querySelector('.page-header__button--js') 
 
 const clickFunction = (e) => {
-    const header = document.querySelector('.page-header__heading--js')
-   header.innerHTML = 'klik, klik!';
+    document.documentElement.style.setProperty('--backgroundColor', 'tomato')
+   /* const header = document.querySelector('.page-header__heading--js')
+   header.innerHTML = 'klik, klik!';*/
 }
 button.addEventListener('click', clickFunction)
 

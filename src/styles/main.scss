@@ -5,6 +5,18 @@ $textColor: rgb(46, 43, 219);
 $desktop: 1280px;
 $tablet: 768px;
 
+:root {
+    --textColour: rgb(43, 43, 43);
+    --backgroundColor: rgb(221, 221, 221);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+    --textColour: rgb(221, 221, 221);
+    --backgroundColor: rgb(43, 43, 43);
+}
+}
+
 html {
     box-sizing: border-box;
 }
@@ -74,8 +86,10 @@ section a {
 }
 
 .my-article {
-    &__header {
-        color: $textColor;
+    background: var(--backgroundColor);
+    color: var(--textColour);
+    padding: 1rem;
+    &__header {        
 
         &::before {
             content: "*";
@@ -87,8 +101,8 @@ section a {
     }
 
     p {
-        background: #53585e;
-        color: white;
+        //background: #53585e;
+        //color: white;
         padding: 16px;
         margin-bottom: 0;
     }    
