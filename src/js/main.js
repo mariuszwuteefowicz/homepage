@@ -1,8 +1,7 @@
 import tax, { calculate as superCalculate } from "./calculate";
 console.log(tax);
 
-import { substractNumbers } from "./calculate";
-console.log(substractNumbers);
+import subtract from "./subtract";
 
 import differenceInDays from 'date-fns/differenceInDays'
 
@@ -106,4 +105,4 @@ const resultDays = differenceInDays(
     alert('cos poszlo nie tak');
 }
 
-
+console.log(`Roznica miedzy 10 a 5 to: ${subtract(10,5)}`)
