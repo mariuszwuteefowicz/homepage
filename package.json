@@ -19,12 +19,14 @@
   "homepage": "https://github.com/mariuszwuteefowicz/homepage#readme",
   "dependencies": {
     "date-fns": "^2.30.0",
+    "js-confetti": "^0.11.0",
     "normalize.css": "^8.0.1"
   },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.9.3",
     "cowsay": "^1.5.0",
-    "parcel": "^2.9.3"
+    "parcel": "^2.9.3",
+    "sharp": "^0.31.3"
   },
   "main": "index.js",
   "keywords": [],
