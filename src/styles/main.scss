@@ -217,3 +217,8 @@ table {
         grid-template-columns: 1fr 1fr 1fr;
     }
 }
+
+.w-full {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+}
